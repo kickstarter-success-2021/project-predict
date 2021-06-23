@@ -4,20 +4,33 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-gunicorn = "*"
-pandas = "*"
-sklearn = "*"
-matplotlib = "*"
-category-encoders = "==2.2.2"
-xgboost = "==1.4.1"
+
+
+numpy = "*"
+spacy = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+scikit-learn = "*"
+jupyter = "*"
+notebook = "*"
+scipy = "*"
+xgboost = "*"
+catboost = "*"
 shap = "*"
-ipykernel = "*"
-joblib = "==1.0.1"
-scikit-learn = "==0.24.1"
+pdp = "*"
+lightgbm = "*"
+matplotlib = "*"
 seaborn = "*"
-dash ="*"
+category-encoders = "*"
+joblib = "*"
+python-dotenv = "*"
+requests = "*"
+psycopg2 = "*"
+
 
 [dev-packages]
 
 [requires]
+
 python_version = "3.8"
+
