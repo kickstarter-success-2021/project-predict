@@ -4,8 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-
-
 numpy = "*"
 spacy = "*"
 flask = "*"
@@ -25,12 +23,9 @@ category-encoders = "*"
 joblib = "*"
 python-dotenv = "*"
 requests = "*"
-psycopg2 = "*"
-
+psycopg2-binary = "*"
 
 [dev-packages]
 
 [requires]
-
 python_version = "3.8"
-
