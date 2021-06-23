@@ -1,6 +1,8 @@
 
 # Predict the success of your Kickstarter Campaign! 
 
+Lambda School, Unit 4 Build Week June 2021
+
 ![image](https://user-images.githubusercontent.com/24326725/123136442-44d62580-d496-11eb-8198-8a80ec62f64e.png)
 
 
