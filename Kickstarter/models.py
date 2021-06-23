@@ -9,12 +9,11 @@ DB = SQLAlchemy()
 
 class Record(DB.Model):
     """Campaign  data"""
+    # id, backers_count, category, pledged, state, blurb_length, goal_in_usd, campaign_duration, sub_category
     id = DB.Column(DB.BigInteger, primary_key=True)
     backers_count = DB.Column(DB.Integer)
     category = DB.Column(DB.UnicodeText())
-    goal = DB.Column(DB.Integer)
     pledged = DB.Column(DB.Integer)
-    spotlight = DB.Column(DB.Integer)
     state = DB.Column(DB.Integer)
     blurb_length = DB.Column(DB.Integer)
     goal_in_usd = DB.Column(DB.Integer)
@@ -37,7 +36,7 @@ class Record(DB.Model):
 
 
 # Look up SQLite connection
-df = pd.read_csv("KickstarterCleanedv4.csv")
+df = pd.read_csv("Kickstarter_FinalCleaned.csv")
 # conn = 
 # df.to_sql('Kickstarter', )
 

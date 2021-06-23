@@ -31,10 +31,10 @@ def create_app():
         DB.create_all()
         for list_item in list_tuple:
         # id,  backers_count, category, goal, pledged, spotlight, state, blurb_length, goal_in_usd, campaign_duration, sub_category
-            db_record = Record(id=list_item[0], backers_count=list_item[1], category = list_item[1],                 
-                        goal = list_item[2], pledged = list_item[3], spotlight = list_item[4],
-                        state = list_item[5], blurb_length = list_item[7], goal_in_usd = list_item[8], 
-                        campaign_duration = list_item[9], sub_category = list_item[10]) 
+            db_record = Record(id=list_item[0], backers_count=list_item[1], category = list_item[2],                 
+                        pledged = list_item[3], state = list_item[4],
+                        blurb_length = list_item[5], goal_in_usd = list_item[6], 
+                        campaign_duration = list_item[7], sub_category = list_item[8]) 
             DB.session.add(db_record)
         DB.session.commit()
         users = Record.query.all()  # SQL equivalent: `SELECT * FROM user;`
