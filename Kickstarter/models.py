@@ -36,7 +36,8 @@ class Record(DB.Model):
 
 
 # Look up SQLite connection
-df = pd.read_csv("Kickstarter_FinalCleaned.csv")
+# df = pd.read_csv("Kickstarter_FinalCleaned.csv") 
+df = pd.read_csv("./Kickstarter/Kickstarter_FinalCleaned.csv")
 # conn = 
 # df.to_sql('Kickstarter', )
 
