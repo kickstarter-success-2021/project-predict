@@ -1,1 +1,1 @@
-web: gunicorn Kickstarter:app -t 120
+web: gunicorn Kickstarter:APP -t 120
