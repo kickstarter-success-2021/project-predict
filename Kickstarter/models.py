@@ -22,31 +22,6 @@ class Record(DB.Model):
     
     def __repr__(self):
         return f"<User: {self.text}>"
-# A special parser for the jason column named category in many datasets
-# def CustomParser(data):
-#     if data is not np.NaN:
-#         try:
-#             j1 = json.loads(data)
-#             return j1['name']
-#         except:
-#             return data.split(":",1)[1].replace('"',"")
-
-# Creates Table
-# Similar to saying `CREATE TABLE tweet ...` in SQL
-
-
-# Look up SQLite connection
-# df = pd.read_csv("Kickstarter_FinalCleaned.csv") 
-df = pd.read_csv("./Kickstarter/Kickstarter_FinalCleaned.csv")
-# conn = 
-# df.to_sql('Kickstarter', )
-
-# Local Key and Connection
-conn = sqlite3.connect('db.sqlite3')
-df.to_sql('record', con=conn, if_exists="replace")
-curs = conn.cursor()
-result = curs.fetchall()
-
 
 # Iterate Over Dataframe and Create a List of Tuple
 list_tuple= []
