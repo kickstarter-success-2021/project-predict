@@ -23,13 +23,6 @@ class Record(DB.Model):
     def __repr__(self):
         return f"<User: {self.text}>"
 
-# Iterate Over Dataframe and Create a List of Tuple
-list_tuple= []
-
-for row in df.itertuples(index=False, name = None):
-    list_tuple.append(row)
-
-# print(list_tuple)
 
 
 
